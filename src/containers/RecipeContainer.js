@@ -30,7 +30,7 @@ const RecipeContainer = () => {
     return(
         <>
             <RecipeList recipes={recipes}/>
-            <AddRecipe />
+            <AddRecipe recipes={recipes}/>
         </>
 
     )
