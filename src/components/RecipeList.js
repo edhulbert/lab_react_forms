@@ -1,4 +1,5 @@
 import Recipe from "./Recipe";
+import React from 'react';
 
 const RecipeList = ({recipes}) => {
 

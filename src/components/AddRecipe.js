@@ -1,4 +1,5 @@
 import {useState, useRef} from "react"; 
+import React from 'react';
 
 const AddRecipe = ({recipes, setRecipes}) => {
     const inputNameRef = useRef();
