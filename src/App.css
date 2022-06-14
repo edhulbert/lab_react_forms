@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(194, 228, 143);  */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.recipe-card > ul {
+  list-style: none;
+  /* background-color: aliceblue; */
+  text-align: left;
+  /* border-style: solid; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* .recipe-card > p {
+  border-style: dotted;
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.recipe-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  /* background-color: aqua; */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#root {
+  text-align: center;
+  display: grid;
+  row-gap: 1.2em;
+  grid-template-columns: 50% 50%;
+  padding: 1.2em;
 }
