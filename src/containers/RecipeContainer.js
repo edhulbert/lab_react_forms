@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState,useRef} from "react";
 import RecipeList from "../components/RecipeList";
 import AddRecipe from "../components/AddRecipe";
 
@@ -30,7 +30,8 @@ const RecipeContainer = () => {
     return(
         <>
             <RecipeList recipes={recipes}/>
-            <AddRecipe recipes={recipes}/>
+            <AddRecipe setRecipes={setRecipes} recipes={recipes}/>
+
         </>
 
     )
