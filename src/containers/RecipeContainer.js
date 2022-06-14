@@ -1,4 +1,6 @@
 import {useState} from "react";
+import RecipeList from "../components/RecipeList";
+import AddRecipe from "../components/AddRecipe";
 
 const RecipeContainer = () => {
     const [recipes, setRecipes] = useState([
@@ -27,10 +29,11 @@ const RecipeContainer = () => {
 
     return(
         <>
-        <p>Hello from inside the Recipe Container!</p>
+            <RecipeList recipes={recipes}/>
+            <AddRecipe />
         </>
 
     )
 }
 
-export default RecipeContainer
+export default RecipeContainer;
