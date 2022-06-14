@@ -1,7 +1,7 @@
 import {useState, useRef} from "react"; 
 
-const AddRecipe = () => {
-    const [recipes, setRecipes] = useState();
+const AddRecipe = ({recipes}) => {
+    const [prevRecipes, setRecipes] = useState(recipes);
     const inputNameRef = useRef();
     const inputIngredientRef = useRef();
     const inputRatingRef = useRef();
@@ -12,7 +12,11 @@ const AddRecipe = () => {
         const ingredients = inputIngredientRef.current.value;
         const rating = inputRatingRef.current.value;
         console.log(name);
-        setRecipes(prevRecipes => [...prevRecipes, {name: name, ingredients: ingredients, rating: rating}])
+        console.log(ingredients);
+        console.log(rating);
+        setRecipes(prevRecipes => [...prevRecipes, {cakeName: name, ingredients: ingredients, rating: rating}])
+        console.log(recipes);
+        
     }
     
     return(
